@@ -109,6 +109,7 @@ typedef struct r_cons_grep_t {
 	int begin;
 	int end;
 	int icase;
+	bool code;
 } RConsGrep;
 
 enum { ALPHA_RESET = 0x00, ALPHA_FG = 0x01, ALPHA_BG = 0x02, ALPHA_FGBG = 0x03 };
