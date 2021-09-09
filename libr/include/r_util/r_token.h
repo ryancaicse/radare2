@@ -13,7 +13,7 @@ typedef enum {
 	R_TOKEN_GROUP,
 	R_TOKEN_BEGIN,
 	R_TOKEN_END
-} TokenType;
+} RTokenType;
 
 typedef bool (*RTokenizerCallback)(void *tok);
 
@@ -25,7 +25,7 @@ typedef struct r_tokenizer_t {
 	size_t begin;
 	int indent;
 	size_t end;
-	TokenType type;
+	RTokenType type;
 	RTokenizerCallback cb;
 	void *user;
 } RTokenizer;
