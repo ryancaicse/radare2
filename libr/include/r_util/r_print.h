@@ -162,6 +162,11 @@ typedef struct r_print_t {
 	// eg. when setting the default flag tags on startup. Does not override scr.progressbar.
 	bool enable_progressbar;
 	RCharset *charset;
+
+	// segmented memory addressing
+	int offseg;
+	int seggrn;
+	int cs;
 } RPrint;
 
 #ifdef R_API
