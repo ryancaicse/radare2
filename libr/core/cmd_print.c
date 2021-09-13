@@ -7141,7 +7141,8 @@ static int lenof(ut64 off, int two) {
 	return strlen (buf);
 }
 
-R_API void r_print_offset_sg(RPrint *p, ut64 off, int invert, int offseg, int seggrn, int offdec, int delta, const char *label) {
+R_API void r_print_offset(RPrint *p, ut64 off, int invert, int offseg, int offdec, int delta, const char *label) {
+R_API void r_print_offset_sg(RPrint *p, ut64 off, int invert, bool offseg, int seggrn, int offdec, int delta, const char *label) {
 	char space[32] = {
 		0
 	};
